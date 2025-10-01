@@ -1,10 +1,10 @@
 {
-  "name": "TypeScript",
+  "name": "Learn_TypeScript",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --watch index.ts"
+    "start": "tsc && node dist/index.js"
   },
   "keywords": [],
   "author": "",
