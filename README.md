@@ -1,1 +1,1 @@
-# My Journey Road to Full Stack Developer.
+# My Journey from Road to Full Stack Developer.
