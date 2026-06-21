@@ -1,11 +1,9 @@
-// "use client";
 // import Image from "next/image";
 
 export default function Home() {
-  console.log(`hello`);
   return (
     <div>
-      <h1 className='text-5xl'>Hello world.</h1>
+      <h1 className='text-5xl'>Hello World.</h1>
     </div>
   );
 }
