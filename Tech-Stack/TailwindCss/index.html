@@ -6,71 +6,470 @@
     <title>Tailwind Css V4</title>
     <script type="module" src="./app.js"></script>
   </head>
-  <body class="bg-[#fafafa] font-sans text-[#4c4e61]">
-    <main class="mx-auto max-w-[1200px] px-8 py-16 md:px-12 lg:px-20">
-      <section class="mx-auto max-w-[540px] text-center">
-        <h1 class="text-3xl font-extralight leading-tight text-[#4c4e61]">
-          Reliable, efficient delivery
-        </h1>
-        <h2 class="mt-1 text-3xl font-semibold leading-tight text-[#4c4e61]">
-          Powered by Technology
-        </h2>
-        <p class="mt-4 text-[15px] leading-6 text-[#a3a5ae]">
-          Our Artificial Intelligence powered tools use millions of project data
-          points to ensure that your project is successful
-        </p>
-      </section>
-
-      <section class="mt-16 grid gap-8 lg:grid-cols-3 lg:items-center">
-        <article
-          class="rounded-lg border-t-4 border-cyan-400 bg-white p-8 shadow-[0_12px_24px_rgba(131,166,210,0.25)]">
-          <h3 class="text-2xl font-semibold text-[#4c4e61]">Supervisor</h3>
-          <p class="mt-2 text-[15px] leading-6 text-[#a3a5ae]">
-            Monitors activity to identify project roadblocks
-          </p>
-          <div class="mt-10 flex justify-end">
-            <img src="./images/icon-supervisor.svg" alt="Supervisor icon" />
-          </div>
-        </article>
-
-        <div class="grid gap-8">
-          <article
-            class="rounded-lg border-t-4 border-red-400 bg-white p-8 shadow-[0_12px_24px_rgba(131,166,210,0.25)]">
-            <h3 class="text-2xl font-semibold text-[#4c4e61]">Team Builder</h3>
-            <p class="mt-2 text-[15px] leading-6 text-[#a3a5ae]">
-              Scans our talent network to create the optimal team for your
-              project
-            </p>
-            <div class="mt-10 flex justify-end">
-              <img
-                src="./images/icon-team-builder.svg"
-                alt="Team Builder icon" />
-            </div>
-          </article>
-
-          <article
-            class="rounded-lg border-t-4 border-orange-400 bg-white p-8 shadow-[0_12px_24px_rgba(131,166,210,0.25)]">
-            <h3 class="text-2xl font-semibold text-[#4c4e61]">Karma</h3>
-            <p class="mt-2 text-[15px] leading-6 text-[#a3a5ae]">
-              Regularly evaluates our talent to ensure quality
-            </p>
-            <div class="mt-10 flex justify-end">
-              <img src="./images/icon-karma.svg" alt="Karma icon" />
-            </div>
-          </article>
+  <body class="font-body selection:bg-primary selection:text-on-primary">
+    <!-- TopAppBar -->
+    <header
+      class="flex justify-between items-center w-full px-6 py-4 sticky top-0 z-50 bg-[#0f0f00] dark:bg-[#0f0f00]">
+      <div class="flex items-center gap-8">
+        <span
+          class="text-2xl font-black italic text-[#ccff00] tracking-tighter font-['Lexend'] uppercase"
+          >KINETIC</span
+        >
+        <nav class="hidden md:flex items-center gap-6">
+          <a
+            class="text-zinc-500 hover:bg-[#1b1b00] transition-colors duration-200 px-3 py-1 font-headline text-xs tracking-widest uppercase"
+            href="#"
+            >Dashboard</a
+          >
+          <a
+            class="text-[#ccff00] font-bold hover:bg-[#1b1b00] transition-colors duration-200 px-3 py-1 font-headline text-xs tracking-widest uppercase border-b-2 border-primary"
+            href="#"
+            >Workouts</a
+          >
+          <a
+            class="text-zinc-500 hover:bg-[#1b1b00] transition-colors duration-200 px-3 py-1 font-headline text-xs tracking-widest uppercase"
+            href="#"
+            >Active</a
+          >
+          <a
+            class="text-zinc-500 hover:bg-[#1b1b00] transition-colors duration-200 px-3 py-1 font-headline text-xs tracking-widest uppercase"
+            href="#"
+            >Profile</a
+          >
+        </nav>
+      </div>
+      <div class="flex items-center gap-4">
+        <button
+          class="material-symbols-outlined text-[#ccff00] hover:bg-[#1b1b00] p-2 transition-all active:scale-95"
+          data-icon="notifications">
+          notifications
+        </button>
+        <button
+          class="material-symbols-outlined text-[#ccff00] hover:bg-[#1b1b00] p-2 transition-all active:scale-95"
+          data-icon="settings">
+          settings
+        </button>
+        <div
+          class="w-10 h-10 rounded-md bg-surface-container overflow-hidden border border-outline-variant/20">
+          <img
+            alt="User Profile Avatar"
+            data-alt="Close up portrait of a sweating athlete after a high intensity workout, dramatic studio lighting, gritty texture."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3eHwwqvomB4qxSdzUEJ7Hr2KjkVAMt1-zWwuv8aa-SRjA07gYmjcxRpoWGIYBkoJpw8uDDcjbJN-MbfcAK0qKDDd_QHxThWgzSFU4k4H-DcQeolRdnlqFq-IUb020IIkrc-_aIo7GQ9btw-VapjRZ62NeVvpzD08RnPp2RoKAB3p-Nd2vqTaHe6-Z0c5V3Pt7PItzEXmKJK_WJThzMgh2KoDGR8mnRC964bHkzqxFDQU98hAjYNylCgqBqwYYrMZprklEvWcTXcTI" />
         </div>
-
-        <article
-          class="rounded-lg border-t-4 border-blue-400 bg-white p-8 shadow-[0_12px_24px_rgba(131,166,210,0.25)]">
-          <h3 class="text-2xl font-semibold text-[#4c4e61]">Calculator</h3>
-          <p class="mt-2 text-[15px] leading-6 text-[#a3a5ae]">
-            Uses data from past projects to provide better delivery estimates
+      </div>
+    </header>
+    <div class="flex">
+      <!-- SideNavBar (Desktop Only) -->
+      <aside
+        class="hidden lg:flex flex-col h-screen w-64 fixed left-0 top-0 pt-24 p-4 gap-2 bg-[#0f0f00] dark:bg-[#0f0f00] z-40">
+        <div class="mb-8 px-4">
+          <h3
+            class="font-headline font-black text-[#ccff00] text-xl tracking-tight">
+            ATHLETE_01
+          </h3>
+          <p class="font-label text-xs uppercase tracking-widest text-zinc-500">
+            Elite Performance
           </p>
-          <div class="mt-10 flex justify-end">
-            <img src="./images/icon-calculator.svg" alt="Calculator icon" />
+        </div>
+        <a
+          class="flex items-center gap-3 text-zinc-400 px-4 py-3 hover:text-zinc-100 hover:bg-[#151400] transition-all rounded-md"
+          href="#">
+          <span class="material-symbols-outlined" data-icon="dashboard"
+            >dashboard</span
+          >
+          <span class="font-['Lexend'] font-medium text-sm tracking-wide"
+            >Dashboard</span
+          >
+        </a>
+        <a
+          class="flex items-center gap-3 bg-[#1b1b00] text-[#ccff00] rounded-md px-4 py-3 border-l-4 border-[#ccff00] active:scale-[0.96] transition-transform duration-150"
+          href="#">
+          <span class="material-symbols-outlined" data-icon="fitness_center"
+            >fitness_center</span
+          >
+          <span class="font-['Lexend'] font-medium text-sm tracking-wide"
+            >Workouts</span
+          >
+        </a>
+        <a
+          class="flex items-center gap-3 text-zinc-400 px-4 py-3 hover:text-zinc-100 hover:bg-[#151400] transition-all rounded-md"
+          href="#">
+          <span class="material-symbols-outlined" data-icon="timer">timer</span>
+          <span class="font-['Lexend'] font-medium text-sm tracking-wide"
+            >Active</span
+          >
+        </a>
+        <a
+          class="flex items-center gap-3 text-zinc-400 px-4 py-3 hover:text-zinc-100 hover:bg-[#151400] transition-all rounded-md"
+          href="#">
+          <span class="material-symbols-outlined" data-icon="person"
+            >person</span
+          >
+          <span class="font-['Lexend'] font-medium text-sm tracking-wide"
+            >Profile</span
+          >
+        </a>
+        <div class="mt-auto p-4">
+          <button
+            class="w-full py-4 liquid-gradient text-on-primary font-headline font-black italic tracking-tighter rounded-md active:scale-95 transition-all">
+            START WORKOUT
+          </button>
+        </div>
+      </aside>
+      <!-- Main Content -->
+      <main class="flex-1 lg:ml-64 p-6 md:p-10">
+        <!-- Hero Hype Segment -->
+        <section
+          class="relative w-full h-[512px] min-h-[400px] mb-12 overflow-hidden rounded-md group">
+          <img
+            class="absolute inset-0 w-full h-full object-cover grayscale brightness-50 group-hover:scale-105 transition-transform duration-700"
+            data-alt="Athletic trainer guiding a student through heavy squats in a dark industrial gym, low-key lighting, intense focus."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ1fgWhUnZb5KvvSrPD6_UCNpfpevIr8E2QZFX7HVoeoHkt6djgXcLmrPGBWCV1m9DlMrEsdohEFMJ1IhHa6uYccUIgx3A1EkgrkI3wh0DD94Icwbmg7ynX33ymSMVU03PTrqWlRKp2uF0xVMdP-3J0tAN8Xz768dNl9Wl4uAj8HbA3iwzZXj4jNsXZwKb3r_5D4WitjaLcUc7fkJSDxrwhJEu5fgJCLk2zUVPi0IrE7WEc7QkS-gVTlgLK9lfXM6RLYt7GN7q7Clx" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+          <div class="absolute bottom-10 left-10 max-w-2xl">
+            <span
+              class="bg-secondary text-on-secondary px-3 py-1 font-headline font-black text-xs uppercase tracking-widest italic mb-4 inline-block"
+              >Featured Trainer Session</span
+            >
+            <h1
+              class="text-6xl md:text-8xl font-headline font-black text-primary italic uppercase tracking-tighter leading-[0.8] mb-6">
+              VOLT<br />IGNITION
+            </h1>
+            <p class="text-on-surface-variant font-body text-lg max-w-md mb-8">
+              Master high-velocity movements with Coach Sarah J. Elite-level
+              HIIT engineered for maximum power output.
+            </p>
+            <div class="flex gap-4">
+              <button
+                class="px-8 py-3 liquid-gradient text-on-primary font-headline font-black tracking-widest uppercase active:scale-95 transition-all rounded-md">
+                GO NOW
+              </button>
+              <button
+                class="px-8 py-3 bg-surface-container/50 backdrop-blur-md border border-outline-variant/20 text-on-surface font-headline font-black tracking-widest uppercase active:scale-95 transition-all rounded-md">
+                DETAILS
+              </button>
+            </div>
           </div>
-        </article>
-      </section>
-    </main>
+        </section>
+        <!-- Filters & Categories -->
+        <section class="mb-12">
+          <div class="flex flex-wrap items-end justify-between gap-6 mb-8">
+            <div>
+              <h2
+                class="font-headline text-4xl font-black text-primary uppercase tracking-tighter italic mb-2">
+                Workout Library
+              </h2>
+              <p
+                class="text-zinc-500 font-label tracking-widest text-xs uppercase">
+                Filter by discipline and intensity
+              </p>
+            </div>
+            <div class="flex gap-3 overflow-x-auto pb-2">
+              <button
+                class="whitespace-nowrap rounded-full bg-primary text-on-primary px-6 py-2 font-headline font-bold text-xs uppercase tracking-widest transition-all">
+                All
+              </button>
+              <button
+                class="whitespace-nowrap rounded-full bg-surface-container text-zinc-400 px-6 py-2 font-headline font-bold text-xs uppercase tracking-widest hover:text-primary transition-all">
+                HIIT
+              </button>
+              <button
+                class="whitespace-nowrap rounded-full bg-surface-container text-zinc-400 px-6 py-2 font-headline font-bold text-xs uppercase tracking-widest hover:text-primary transition-all">
+                Strength
+              </button>
+              <button
+                class="whitespace-nowrap rounded-full bg-surface-container text-zinc-400 px-6 py-2 font-headline font-bold text-xs uppercase tracking-widest hover:text-primary transition-all">
+                Cardio
+              </button>
+              <button
+                class="whitespace-nowrap rounded-full bg-surface-container text-zinc-400 px-6 py-2 font-headline font-bold text-xs uppercase tracking-widest hover:text-primary transition-all">
+                Yoga
+              </button>
+            </div>
+          </div>
+          <!-- Bento Grid Workouts -->
+          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+            <!-- Workout Card 1 (Large) -->
+            <div
+              class="md:col-span-2 xl:col-span-2 relative group overflow-hidden rounded-md bg-surface-container aspect-[16/9] md:aspect-auto h-[400px]">
+              <img
+                class="absolute inset-0 w-full h-full object-cover grayscale opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-500"
+                data-alt="Modern fitness equipment in a minimalist dark gym setting, dramatic lighting highlighting textures of iron and steel."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4T_SjOZaZWkujePSlSRcPHg0SHeJgbQUPgoV1fagjBHg_IJaFdauO7koS-nZt3Da7a2DnXF-fZslipHeK7OmpmXrZz60iNctkbb-PMGCLpWpH34wvkwGPSSL7Fk2FQrvFrFmMzCbOu6VgWuxbiKIhWjvXBnhmYZIjnV7rgHp9-8Ols_zwx9DJXy1uJJj-InrBSxtkvPXzjs2T5WxnxcTgBiuV-hwk6UFZh9rjXj8M2PEcXhieaRlpJd2dpGxYdVuD0gIKGyRMPia4" />
+              <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                <div class="flex items-center gap-4 mb-4">
+                  <span
+                    class="bg-surface-container-highest px-3 py-1 rounded-full text-[10px] font-headline font-black text-primary tracking-widest uppercase"
+                    >STRENGTH</span
+                  >
+                  <span class="text-zinc-400 text-xs font-label"
+                    >45 MIN • ADVANCED</span
+                  >
+                </div>
+                <h3
+                  class="text-4xl md:text-5xl font-headline font-black text-white italic uppercase tracking-tighter mb-4">
+                  Industrial Power
+                </h3>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-primary text-sm"
+                    data-icon="star"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >star</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-primary text-sm"
+                    data-icon="star"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >star</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-primary text-sm"
+                    data-icon="star"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >star</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-primary text-sm"
+                    data-icon="star"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >star</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-zinc-700 text-sm"
+                    data-icon="star"
+                    >star</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Workout Card 2 -->
+            <div
+              class="bg-surface-container-low rounded-md p-1 border-b-2 border-transparent hover:border-secondary transition-all">
+              <div class="relative h-48 overflow-hidden rounded-sm">
+                <img
+                  class="w-full h-full object-cover grayscale opacity-50"
+                  data-alt="Focus on athlete's abdominal muscles during intense core training, sweat, shadows, athletic determination."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI-1DhTESChHpniPauGnLh3sU1VpKY5jBK9rGvuwqZ3zxY-dGiYQbh9_EBFw0E-x5LoNvc-acMzQT1TCYsyqOehnWaNXpDKpF_P1W_oLQga7EoX0-hmXo17rbNZRAhhYk6lXHtg4awFhRtS_rhgEuB9RCd07WGOm0-2HaHndiaEX-pFmQXepF-Kjyr5DIyVnIm_AuwU6RucxoVJqXgQW1vwKQVtGaz7g6taCg0NtGEvOQIZ9aJsKp6KWN5n_4vE-Is86N5jG3hIDFp" />
+                <div
+                  class="absolute top-4 left-4 bg-secondary-container/80 text-on-secondary-container px-2 py-1 text-[10px] font-headline font-black italic tracking-widest uppercase">
+                  Burn
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-6">
+                  <h4
+                    class="font-headline font-black text-xl text-primary tracking-tighter uppercase italic leading-none">
+                    Core Velocity
+                  </h4>
+                  <span
+                    class="material-symbols-outlined text-zinc-600"
+                    data-icon="bookmark"
+                    >bookmark</span
+                  >
+                </div>
+                <div class="flex items-center justify-between mt-auto">
+                  <div class="flex flex-col">
+                    <span
+                      class="text-zinc-500 font-label text-[10px] uppercase tracking-widest"
+                      >Duration</span
+                    >
+                    <span class="font-headline font-bold text-white"
+                      >20 MIN</span
+                    >
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-zinc-500 font-label text-[10px] uppercase tracking-widest"
+                      >Level</span
+                    >
+                    <span class="font-headline font-bold text-secondary"
+                      >ELITE</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Workout Card 3 -->
+            <div
+              class="bg-surface-container-low rounded-md p-1 border-b-2 border-transparent hover:border-primary transition-all">
+              <div class="relative h-48 overflow-hidden rounded-sm">
+                <img
+                  class="w-full h-full object-cover grayscale opacity-50"
+                  data-alt="Person performing a graceful but powerful yoga pose against a dark textured wall, minimal lighting."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPWTvdZtdDIHEJEkvwmOB-R55B9FgIClAzLF-Q2f8qwAI96pQ1F5DY33EGX9RNZ00j0hA6SzQ0GAd29iv3zqKmzRvX7rCQ8TIT3Cb6uuTUKJtWRnxnFuHjxPWPTrhonUEF9yHGMdjEESBqxRHyZnY9oxaJlu3hi9wtjKYTjbr3WUZ7-DU1RnL5CnOyeC_A_kBtVup5h5xtvD0FwJ7cAZStQdbI5AoPiH9lkAConwab1UPLxY05E4b4Cb1qBSxRHhiMub3cInzu3eCm" />
+              </div>
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-6">
+                  <h4
+                    class="font-headline font-black text-xl text-primary tracking-tighter uppercase italic leading-none">
+                    Flow State V
+                  </h4>
+                  <span
+                    class="material-symbols-outlined text-zinc-600"
+                    data-icon="bookmark"
+                    >bookmark</span
+                  >
+                </div>
+                <div class="flex items-center justify-between mt-auto">
+                  <div class="flex flex-col">
+                    <span
+                      class="text-zinc-500 font-label text-[10px] uppercase tracking-widest"
+                      >Duration</span
+                    >
+                    <span class="font-headline font-bold text-white"
+                      >60 MIN</span
+                    >
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-zinc-500 font-label text-[10px] uppercase tracking-widest"
+                      >Level</span
+                    >
+                    <span class="font-headline font-bold text-white"
+                      >INTER</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Workout Card 4 -->
+            <div
+              class="bg-surface-container-low rounded-md p-1 border-b-2 border-transparent hover:border-primary transition-all">
+              <div class="relative h-48 overflow-hidden rounded-sm">
+                <img
+                  class="w-full h-full object-cover grayscale opacity-50"
+                  data-alt="Close up of running shoes on a treadmill, high speed motion blur, neon accents."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuJ0yKYIsXIh9oNx17amp0xRp4tug3TitfLZhx6nuUuTo7Qh2ACyH8LQilyBL8quw8l2dgyyrwTCqZNtDeNcwKOcbad-3xFKpR0kzM-0k08_94TfzvYrho-XTebZSH_d4I_fNl--jAj7Uiny9hfwgfs4og4pWDX1sw6cqj-tvfvVqzR9DIfjUf9Me-ueXADHEKrQRA9K0e0NkOaFyx61jSAsqXPzxaiuRs7aJE-e0G5K4py4a_AXYrL_qmXB_kJOVm5mjont-rvxTw" />
+              </div>
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-6">
+                  <h4
+                    class="font-headline font-black text-xl text-primary tracking-tighter uppercase italic leading-none">
+                    Rapid Pulse
+                  </h4>
+                  <span
+                    class="material-symbols-outlined text-zinc-600"
+                    data-icon="bookmark"
+                    >bookmark</span
+                  >
+                </div>
+                <div class="flex items-center justify-between mt-auto">
+                  <div class="flex flex-col">
+                    <span
+                      class="text-zinc-500 font-label text-[10px] uppercase tracking-widest"
+                      >Duration</span
+                    >
+                    <span class="font-headline font-bold text-white"
+                      >35 MIN</span
+                    >
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-zinc-500 font-label text-[10px] uppercase tracking-widest"
+                      >Level</span
+                    >
+                    <span class="font-headline font-bold text-white">PRO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Workout Card 5 -->
+            <div
+              class="bg-surface-container-low rounded-md p-1 border-b-2 border-transparent hover:border-primary transition-all">
+              <div class="relative h-48 overflow-hidden rounded-sm">
+                <img
+                  class="w-full h-full object-cover grayscale opacity-50"
+                  data-alt="Crossfit athlete preparing to lift heavy weights, magnesium chalk dust in the air, high contrast."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-04uxyei_YCbINAUKhelYl1xqKAca_AZhsRuMjYdbTiCrTpu-CWgVIzhrsOHpYhHkXpsobQEQ4h1PbKWUtAbOUjhQoWdz8lyuATuMScd5yRHlOM_uhL4aDVu2omrd55u241rzVOPwr1fz5bie0jkeBFuIRMwbykoD5evnzoIavXD1kEKetyEhssJCvu3GRYyHV3Ay22ZxojtDFKhNyK55kGMFa9WB2CjT56sC7MAGEo2DvWpULMu2Ta4MLgYRCAIdEgd86Ew4kHhT" />
+              </div>
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-6">
+                  <h4
+                    class="font-headline font-black text-xl text-primary tracking-tighter uppercase italic leading-none">
+                    The Furnace
+                  </h4>
+                  <span
+                    class="material-symbols-outlined text-zinc-600"
+                    data-icon="bookmark"
+                    >bookmark</span
+                  >
+                </div>
+                <div class="flex items-center justify-between mt-auto">
+                  <div class="flex flex-col">
+                    <span
+                      class="text-zinc-500 font-label text-[10px] uppercase tracking-widest"
+                      >Duration</span
+                    >
+                    <span class="font-headline font-bold text-white"
+                      >45 MIN</span
+                    >
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-zinc-500 font-label text-[10px] uppercase tracking-widest"
+                      >Level</span
+                    >
+                    <span class="font-headline font-bold text-white"
+                      >ELITE</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- BottomNavBar (Mobile Only) -->
+    <nav
+      class="md:hidden fixed bottom-0 left-0 right-0 glass-effect p-2 flex justify-around items-center z-50">
+      <button class="flex flex-col items-center gap-1 p-2 text-zinc-500">
+        <span class="material-symbols-outlined" data-icon="dashboard"
+          >dashboard</span
+        >
+        <span
+          class="text-[10px] font-headline uppercase font-bold tracking-tighter"
+          >Dashboard</span
+        >
+      </button>
+      <button class="flex flex-col items-center gap-1 p-2 text-primary">
+        <span
+          class="material-symbols-outlined"
+          data-icon="fitness_center"
+          style="font-variation-settings: &quot;FILL&quot; 1"
+          >fitness_center</span
+        >
+        <span
+          class="text-[10px] font-headline uppercase font-bold tracking-tighter"
+          >Workouts</span
+        >
+      </button>
+      <button class="flex flex-col items-center gap-1 p-2 text-zinc-500">
+        <span class="material-symbols-outlined" data-icon="timer">timer</span>
+        <span
+          class="text-[10px] font-headline uppercase font-bold tracking-tighter"
+          >Active</span
+        >
+      </button>
+      <button class="flex flex-col items-center gap-1 p-2 text-zinc-500">
+        <span class="material-symbols-outlined" data-icon="person">person</span>
+        <span
+          class="text-[10px] font-headline uppercase font-bold tracking-tighter"
+          >Profile</span
+        >
+      </button>
+    </nav>
+    <!-- Contextual FAB -->
+    <button
+      class="fixed bottom-24 right-6 md:bottom-10 md:right-10 w-16 h-16 rounded-md liquid-gradient text-on-primary flex items-center justify-center shadow-2xl active:scale-90 transition-all z-40">
+      <span
+        class="material-symbols-outlined text-3xl"
+        data-icon="play_arrow"
+        style="font-variation-settings: &quot;FILL&quot; 1"
+        >play_arrow</span
+      >
+    </button>
   </body>
 </html>
